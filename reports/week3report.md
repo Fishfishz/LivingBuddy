@@ -31,5 +31,6 @@ Next week mainly getting started with the Discussion Board. Creating the front e
 
 Chris
 - Empty for this week
-- I made progress by thinking of the multiple scenarios in which the application can be used, which exposed some issues with the idea that we had not previously thought of. This includes scalability(how many dorms should our app be applicable for?) security(how should the app recognise authorized residents?).
+- I made progress by thinking of the multiple scenarios in which the application can be used, which exposed some issues with the idea that we had not previously thought of. This includes scalability(how many dorms should our app be applicable for?) security(how should the app recognise authorized residents?). Another scenario was when we should be censoring texts in the chat thread. I proposed that swear/offensive words should be blocked in the chat thread.
+- I will be working with Yazan to brainstorm about the design and architecture of the Dashboard component. We might even start using the frameworks to implement the core structure of the component based on our proposed architecture, but not beyond that to avoid having to revert all of our progress in case we as a group change our minds.
 
