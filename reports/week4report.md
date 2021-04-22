@@ -8,7 +8,8 @@ Finalize the ER diagram design for the database(Google firebase). Build the desi
 
 Individual Report:
 
-Frank
+Frank:
+
  Goals from a week ago: 
 Set up the Github and Google firebase project
 Set up a React project and push to Github
@@ -22,7 +23,8 @@ Search for a consistent UI template for the calendar scheduler.
 Research for libraries and start to implement the calendar scheduler
 Finish the database design and build the schema in google firebase.
 
-Yazan
+Yazan:
+
  Goals from a week ago: 
 Next week, I will be teaming up with Chris to work on the Design for the Dashboard of our app and also finalize the features like ChatBox requirements.
 
@@ -34,7 +36,7 @@ Work on the ER diagrams and Schema
 Start to create the front End for our application
 
 
-Andy
+Andy:
 Goals from last week: 
 Teaming with Frank to work on Discussion Board and Calendar Schedule
 Next week mainly getting started with the Discussion Board. Creating the front end of it using HTML and CSS.
@@ -43,7 +45,7 @@ Goals:
 Teaming with Frank to work on Calendar Schedule
 Next week: researching available libraries to implement Calendar Schedule. Creating basic html/css framework for the page.
 
-Chris
+Chris:
 Goals from last week: 
 Unfortunately, I was not able to make time with Yazan to brainstorm about the design and architecture of the Dashboard component. This however should not be too big of an issue considering that we will be spending this week 
 I worked on revising the requirement document which lacked some information, which was a task that was not anticipated last week. However, this task helped me solidify my idea of what the different features might look like, and raised questions that would have eventually been raised. For example, I realised that the chat feature is going to appear as one of the following: entire window or a pop up, which naturally prompted me to think which is a better option? Also, I asked myself which was a more feasible option, where I concluded that a chat screen that takes up the entire window was easier to implement than a pop up, and decided that it will be the priority during our earlier phase. 
