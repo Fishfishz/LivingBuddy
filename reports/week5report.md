@@ -1,24 +1,60 @@
 Team Report: 
--
--
--
+- Goals from last week: 
+Searching for a suitable UI template that can be used as the theme of the app, which would be a task for Chris and Yazan, as their focus is on the dashboard, the most visible component.
+Finalize software architecture and design, which would be done in collaboration.
+Finalize the ER diagram design for the database(Google firebase). Build the designed schema on the google firebase.
+
+- What we have accomplished this week:
+    We have found a suitable UI template: https://demos.creative-tim.com/material-dashboard-react/?_ga=2.50630505.1988120701.1619553140-1844240760.1619553140#/admin/notifications
+  We have finalized the software architecture and design, as well as a coding guideline 
+  - We decided that our database is simple enough that a high level schema suffices, and an ER diagram isn’t necessary. The schema has not been built on the Google Firebase, so that must be done this week.for React.js, a more fine grained schedule for the upcoming milestones for the project, and a more detailed analysis of the potential risks in the project.
+
+- Goals for the following week
+Complete the testing plan
+Start implementing the dashboard and the calendar schedule
+
 
 Individual Report:
 
 Frank
--
--
--
+- Goals from a week ago: 
+  * Work on the login page.
+  * Search for a consistent UI template for the calendar scheduler. 
+  * Research for libraries and start to implement the calendar scheduler
+  *  Finish the database design and build the schema in google firebase.
+
+- what you did, what worked, what you learned, where you had trouble, and where you are stuck:
+  * I mained worked on database schema design and finished the software design part of a living document with my teammates this week. I didn’t finish the login           page because we just decided on the UI template for this project this week. I learned the MVVM and MVC model this week and how they correspond to a React project. 
+
+- Goals for the following week: 
+ * Work on the login page.
+ * Finish the layout design for Calendar Scheduler
+ * Finish the CICD for the project
+
 
 Yazan
--
--
--
+- Goals for the following week: 
+  * Finalize the UI of the Dashboard with Chris
+  * Work on the ER diagrams and Schema
+  * Start to create the front End for our application
+
+- I worked on the Architecture design and database schema for the webapp and worked on the risks that we are facing and made a plan on how we must encounter those risks. Searched suitable UI templates for our project on which we will start working this week.
+
+- Goals for the following week:
+  * Integrate the UI template with our webapp
+  * Start to work on the design for the Dashboard of our app.
+
 
 Andy
--
--
--
+- Goals from last week: 
+  * Teaming with Frank to work on Calendar Schedule
+  * Next week: researching available libraries to implement Calendar Schedule. Creating basic html/css framework for the page.
+
+- Instead of writing the basic framework, we have chosen a template to use to save us some time. I found some good libraries for stylish buttons (pushy buttons for 3D buttons). This link (https://www.cssscript.com/medium-style-confirm-dialog-box-with-javascript-and-css-css3/) is a great library for pop ups (when a user wants to schedule utilities in Calendar Schedule). I also updated the living doc’s risk section and schedule section, adding some new risks that we noticed so far such as spending too much time on planning and documentation, and have not done much implementation.
+
+- * Teaming with Frank to work on Calendar Schedule
+  * Next week: create the landing page for Calendar Schedule.
+
 
 Chris
 - Goals from last week: 
