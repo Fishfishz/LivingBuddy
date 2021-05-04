@@ -11,4 +11,4 @@ install:
 script:
   - CI=false
   - yarn build
-  - yarn test
+  - yarn test -u
