@@ -10,5 +10,4 @@ install:
   - cd ./my-app && yarn install
 script:
   - yarn build
-  - yarn test a
-  - q
+  - yarn test
