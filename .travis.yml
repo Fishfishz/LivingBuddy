@@ -9,5 +9,6 @@ cache:
 install:
   - cd ./my-app && yarn install
 script:
+  - CI=false
   - yarn build
   - yarn test
