@@ -16,8 +16,8 @@ Frank
   - Work on the login page.
   - Finish the layout design for Calendar Scheduler
   - Finish the CICD for the project
-- what you did, what worked, what you learned, where you had trouble, and where you are stuck:
-I mainly worked on implementing the CI and test framework for the project. I have learned how to write tests using the Jest React Testing framework. I had trouble setting up the Travis CI for the project. The build was failed because it treated the warning as failure. It took me some time to research for that and I figured it out.
+- what you did:
+I mainly worked on implementing the CI and test framework for the project. I have learned how to write tests using the Jest React Testing framework. I had trouble setting up the Travis CI for the project. The build was failed because it treated the warning as failure. It took me some time to research for that and I figured it out. I also completed the how to write test part of the document.
 
 - Goals for the following week: 
   - Finish the basic html and components design and implementation for the calendar scheduler with Andy
