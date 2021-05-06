@@ -24,6 +24,16 @@ I mainly worked on implementing the CI and test framework for the project. I hav
   - Add a test suite along with the implementation.
 
 Yazan
+- Goals from a week ago:
+  - Integrate the UI template with our webapp
+  - Start to work on the design for the Dashboard of our app. 
+  
+- What you did:
+  - I worked on the integration of the UI template that we will be using for our Web app, It took me a while to figure it out as the npm install was failing. I had to research on how to make the install work.
+
+- Goals for the following week:
+  - I will be working with Chris to finalize the dashboard UI and start the coding part for it.
+  - I will also be working on our next assignment.
 
 Andy
 - Goals from last week: 
