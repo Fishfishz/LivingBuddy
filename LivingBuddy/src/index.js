@@ -26,6 +26,8 @@ import RTL from "layouts/RTL.js";
 
 import "assets/css/material-dashboard-react.css?v=1.9.0";
 
+import { Auth } from "./configs/firebaseConfig";
+import { useHistory } from "react-router-dom";
 const hist = createBrowserHistory();
 
 ReactDOM.render(
