@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { Link, useHistory } from "react-router-dom";
-import { Auth } from "configs/firebaseConfig";
+import { Auth } from "index";
 import "./sign-up.css";
 import "../auth.css";
 

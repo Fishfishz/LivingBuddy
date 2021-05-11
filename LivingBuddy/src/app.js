@@ -9,7 +9,7 @@ import RTL from "layouts/RTL.js";
 
 import "assets/css/material-dashboard-react.css?v=1.9.0";
 
-import { Auth } from "./configs/firebaseConfig";
+import { Auth } from "./index";
 import { useHistory } from "react-router-dom";
 import SignUp from "./components/auth/sign-up/sign-up";
 import SignIn from "./components/auth/sign-in/sign-in";
