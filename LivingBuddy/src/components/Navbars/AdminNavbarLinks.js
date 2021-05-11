@@ -20,28 +20,24 @@ import CustomInput from "components/CustomInput/CustomInput.js";
 import Button from "components/CustomButtons/Button.js";
 
 import styles from "assets/jss/material-dashboard-react/components/headerLinksStyle.js";
-import { Auth } from "../../configs/firebaseConfig";
-import { useHistory } from "react-router-dom";
 
 const useStyles = makeStyles(styles);
 
 export default function AdminNavbarLinks() {
   const classes = useStyles();
-  const history = useHistory();
   const [openNotification, setOpenNotification] = React.useState(null);
   const [openProfile, setOpenProfile] = React.useState(null);
-  const handleClickNotification = (event) => {
+  const handleClickNotification = event => {
     if (openNotification && openNotification.contains(event.target)) {
       setOpenNotification(null);
     } else {
       setOpenNotification(event.currentTarget);
     }
   };
-
   const handleCloseNotification = () => {
     setOpenNotification(null);
   };
-  const handleClickProfile = (event) => {
+  const handleClickProfile = event => {
     if (openProfile && openProfile.contains(event.target)) {
       setOpenProfile(null);
     } else {
@@ -51,25 +47,18 @@ export default function AdminNavbarLinks() {
   const handleCloseProfile = () => {
     setOpenProfile(null);
   };
-
-  const handleLogOut = () => {
-    Auth.signOut();
-    sessionStorage.removeItem("signedIn");
-    history.push("/sign-in");
-  };
-
   return (
     <div>
       <div className={classes.searchWrapper}>
         <CustomInput
           formControlProps={{
-            className: classes.margin + " " + classes.search,
+            className: classes.margin + " " + classes.search
           }}
           inputProps={{
             placeholder: "Search",
             inputProps: {
-              "aria-label": "Search",
-            },
+              "aria-label": "Search"
+            }
           }}
         />
         <Button color="white" aria-label="edit" justIcon round>
@@ -123,7 +112,7 @@ export default function AdminNavbarLinks() {
               id="notification-menu-list-grow"
               style={{
                 transformOrigin:
-                  placement === "bottom" ? "center top" : "center bottom",
+                  placement === "bottom" ? "center top" : "center bottom"
               }}
             >
               <Paper>
@@ -198,7 +187,7 @@ export default function AdminNavbarLinks() {
               id="profile-menu-list-grow"
               style={{
                 transformOrigin:
-                  placement === "bottom" ? "center top" : "center bottom",
+                  placement === "bottom" ? "center top" : "center bottom"
               }}
             >
               <Paper>
@@ -218,7 +207,7 @@ export default function AdminNavbarLinks() {
                     </MenuItem>
                     <Divider light />
                     <MenuItem
-                      onClick={handleLogOut}
+                      onClick={handleCloseProfile}
                       className={classes.dropdownItem}
                     >
                       Logout
