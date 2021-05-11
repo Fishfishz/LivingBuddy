@@ -49,8 +49,8 @@ class EventForm extends React.Component {
   }
 
   handleChange(event) {
-      console.log(event.target.name)
-      console.log(event.target.value)
+      // console.log(event.target.name)
+      // console.log(event.target.value)
       this.setState({
           [event.target.name]: event.target.value
       });
@@ -103,18 +103,20 @@ export default function Dashboard() {
     useEffect(() => {
         const ref = firebase.database().ref('events');
         ref.on('value', (snapshot) => {
-            let events = snapshot.val();
+            let eventsFromDb = snapshot.val();
             let newState = [];
-            for (let event in events) {
+            for (let event in eventsFromDb) {
                 newState.push({
-                    Title: events[event].Title,
-                    Description: events[event].Description,
-                    Date: events[event].Date
+                    Title: eventsFromDb[event].Title,
+                    Description: eventsFromDb[event].Description,
+                    Date: eventsFromDb[event].Date
                 });
             }
-            setEvents(newState);
+            if (newState.length > 0 && newState !== events) {
+                setEvents(newState);
+            }
         });
-    });
+    }, []);
 
   const eventCards = events.map((event) =>
       <GridItem xs={12} sm={12} md={4}>
