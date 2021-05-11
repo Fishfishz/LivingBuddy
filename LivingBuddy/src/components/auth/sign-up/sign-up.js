@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from "react";
 import { Link, useHistory } from "react-router-dom";
-import { Auth } from "../../../index";
+import { Auth } from "configs/firebaseConfig";
+import "./sign-up.css";
+import "../auth.css";
 
 const SignUp = ({ setSignedIn }) => {
   const [email, setEmail] = useState("");
@@ -12,7 +14,7 @@ const SignUp = ({ setSignedIn }) => {
 
   useEffect(() => {
     Auth.onAuthStateChanged((user) => {
-      if (user) history.push("/home");
+      if (user) history.push("/admin/dashboard");
     });
   });
 
@@ -35,7 +37,7 @@ const SignUp = ({ setSignedIn }) => {
     let uwEmailRegex = /uw.edu/;
     if (!uwEmailRegex.test(email)) {
       setError(
-        "Please try again with your UW email. Our platform is here for UW students and researchers only."
+        "Please try again with your UW email. Our platform is here for UW students only."
       );
       return false;
     }
@@ -173,7 +175,7 @@ const SignUp = ({ setSignedIn }) => {
             color: "rgba(255, 255, 255, 1)",
           }}
         >
-          Get your survey results faster.
+          Connect to your living buddies today!
         </h1>
         <text
           style={{
@@ -185,11 +187,11 @@ const SignUp = ({ setSignedIn }) => {
             "font-weight": "normal",
             "font-size": "18px",
             "line-height": "50px",
+            "margin-top": "20px",
             color: "rgba(255, 255, 255, 1)",
           }}
         >
-          • Exclusive for UW students and researchers • Target your survey
-          results to UW students • No need to spam your friends and families
+          • Exclusive for UW students
         </text>
       </div>
     </div>

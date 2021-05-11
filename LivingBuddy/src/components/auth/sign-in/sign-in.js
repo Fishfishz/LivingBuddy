@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import { Link, useHistory } from "react-router-dom";
-import { Auth } from "../../../index";
+import { Auth } from "configs/firebaseConfig";
+import "./sign-in.css";
+import "../auth.css";
 
 const SignIn = ({ setSignedIn }) => {
   const [email, setEmail] = useState("");
@@ -14,7 +16,7 @@ const SignIn = ({ setSignedIn }) => {
       .then((res) => {
         setSignedIn(true);
         sessionStorage.setItem("signedIn", true);
-        history.push("/home");
+        history.push("/admin/dashboard");
       })
       .catch((error) => {
         var errorCode = error.code;
@@ -145,8 +147,7 @@ const SignIn = ({ setSignedIn }) => {
             color: "rgba(255, 255, 255, 1)",
           }}
         >
-          • Exclusive for UW students and researchers • Target your survey
-          results to UW students • No need to spam your friends and families
+          • Exclusive for UW students
         </text>
       </div>
     </div>
