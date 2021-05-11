@@ -7,7 +7,7 @@ before_install:
 cache:
   yarn: true
 install:
-  - cd ./my-app && yarn install
+  - cd ./LivingBuddy && yarn install
 script:
   - CI=false
   - yarn build
