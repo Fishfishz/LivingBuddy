@@ -49,6 +49,8 @@ class EventForm extends React.Component {
   }
 
   handleChange(event) {
+      // console.log(event.target.name)
+      // console.log(event.target.value)
       this.setState({
           [event.target.name]: event.target.value
       });
@@ -98,23 +100,23 @@ export default function Dashboard() {
   const [events, setEvents] = useState([]);
   // const eventList = [{Title: "Dance night", Description: "blah blah blah", Date: '01/22/2021'}];
   // TODO fetch the eventList from the database
-
-    //useEffect(() => {
-      const ref = firebase.database().ref('events');
-      ref.on('value', (snapshot) => {
-          let events = snapshot.val();
-          let newState = [];
-          for (let event in events) {
-              newState.push({
-                  Title: events[event].Title,
-                  Description: events[event].Description,
-                  Date: events[event].Date
-              });
-          }
-          setEvents(newState);
-      });
-
-    //});
+    useEffect(() => {
+        const ref = firebase.database().ref('events');
+        ref.on('value', (snapshot) => {
+            let eventsFromDb = snapshot.val();
+            let newState = [];
+            for (let event in eventsFromDb) {
+                newState.push({
+                    Title: eventsFromDb[event].Title,
+                    Description: eventsFromDb[event].Description,
+                    Date: eventsFromDb[event].Date
+                });
+            }
+            if (newState.length > 0 && newState !== events) {
+                setEvents(newState);
+            }
+        });
+    }, []);
 
   const eventCards = events.map((event) =>
       <GridItem xs={12} sm={12} md={4}>
@@ -122,14 +124,14 @@ export default function Dashboard() {
               <CardHeader>
               </CardHeader>
               <CardBody>
-                  <h4 className={classes.cardTitle}>{event.title}</h4>
+                  <h4 className={classes.cardTitle}>{event.Title}</h4>
                   <p className={classes.cardCategory}>
-                      {event.description}
+                      {event.Description}
                   </p>
               </CardBody>
               <CardFooter chart>
                   <div className={classes.stats}>
-                      <AccessTime /> {event.date}
+                      <AccessTime /> {event.Date}
                   </div>
               </CardFooter>
           </Card>
