@@ -7,7 +7,7 @@ import Card from "components/Card/Card.js";
 import CardHeader from "components/Card/CardHeader.js";
 import CardBody from "components/Card/CardBody.js";
 import CardFooter from "components/Card/CardFooter.js";
-import { fb } from "../../index";
+import { fb } from "../../app";
 
 import styles from "assets/jss/material-dashboard-react/views/dashboardStyle.js";
 

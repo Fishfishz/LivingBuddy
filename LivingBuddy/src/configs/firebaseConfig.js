@@ -1,6 +1,6 @@
 import "firebase/auth";
 
-const firebaseConfig = {
+export const firebaseConfig = {
   apiKey: "AIzaSyBdicI_-M0lIrJRNdczUdlhtrludFMa4IA",
   authDomain: "livingbuddy-75295.firebaseapp.com",
   databaseURL: "https://livingbuddy-75295-default-rtdb.firebaseio.com",
@@ -11,3 +11,6 @@ const firebaseConfig = {
   measurementId: "G-R2GEVZMFDG",
 };
 
+export const mapKey = {
+  apiKey: "AIzaSyDYluB9LIixAZw9QBzGwTiBjr5a2ITkdG4",
+};

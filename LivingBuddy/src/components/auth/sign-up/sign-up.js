@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { Link, useHistory } from "react-router-dom";
-import { Auth } from "index";
+import { Auth } from "app";
 import "./sign-up.css";
 import "../auth.css";
 

@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Link, useHistory } from "react-router-dom";
-import { Auth } from "index";
+import { Auth } from "app";
 import "./sign-in.css";
 import "../auth.css";
 
@@ -25,6 +25,10 @@ const SignIn = ({ setSignedIn }) => {
       });
   };
 
+  const handleRedirect = () => {
+    history.push("/sign-up");
+  };
+
   return (
     <div id="outer-container">
       <div id="form-container">
@@ -32,18 +36,18 @@ const SignIn = ({ setSignedIn }) => {
           style={{
             height: "65px",
             color: "rgba(0, 0, 0, 0.75)",
-            "font-family": "Open Sans",
-            "font-style": "normal",
-            "font-weight": "bold",
-            "font-size": "48px",
-            "line-height": "40px",
-            "text-align": "center",
+            fontFamily: "Open Sans",
+            fontStyle: "normal",
+            fontWeight: "bold",
+            fontSize: "48px",
+            lineHeight: "40px",
+            textAlign: "center",
           }}
         >
           Log in
         </h1>
 
-        <form>
+        <form data-testid="t1">
           {/* email */}
           <div className="form-group">
             <label htmlFor="email"></label>
@@ -89,7 +93,7 @@ const SignIn = ({ setSignedIn }) => {
                 height: "44.25px",
                 background:
                   "linear-gradient(92.83deg, #EFCAC6 0%, rgba(255, 255, 255, 0) 100%), #7370BB",
-                "border-radius": "45px",
+                borderRadius: "45px",
               }}
               onClick={(e) => {
                 e.preventDefault();
@@ -99,16 +103,15 @@ const SignIn = ({ setSignedIn }) => {
               LOGIN
             </button>
 
-            <Link to="/sign-up">
-              <button className="btn btn-primary mr-2" style={{}}>
-                Or sign up using UW email
-              </button>
-            </Link>
+            <button
+              className="btn btn-primary mr-2"
+              style={{}}
+              onClick={handleRedirect}
+            >
+              Or sign up using UW email
+            </button>
 
             <br />
-            <Link to="/reset-password" style={{}}>
-              Forgot password?
-            </Link>
           </div>
         </form>
 
@@ -121,34 +124,34 @@ const SignIn = ({ setSignedIn }) => {
             width: "392px",
             height: "130px",
 
-            "font-family": "Open Sans",
-            "font-style": "normal",
-            "font-weight": "bold",
-            "font-size": "48px",
-            "line-height": "65px",
+            fontFamily: "Open Sans",
+            fontStyle: "normal",
+            fontWeight: "bold",
+            fontSize: "48px",
+            lineHeight: "65px",
             display: "flex",
-            "align-items": "center",
-            "text-align": "center",
+            alignItems: "center",
+            textAlign: "center",
             color: "rgba(255, 255, 255, 1)",
           }}
         >
           Welcome back!
         </h1>
-        <text
+        <p
           style={{
             width: "370px",
             height: "273px",
 
-            "font-family": "Open Sans",
-            "font-style": "normal",
-            "font-weight": "normal",
-            "font-size": "18px",
-            "line-height": "50px",
+            fontFamily: "Open Sans",
+            fontStyle: "normal",
+            fontWeight: "normal",
+            fontSize: "18px",
+            lineHeight: "50px",
             color: "rgba(255, 255, 255, 1)",
           }}
         >
           • Exclusive for UW students
-        </text>
+        </p>
       </div>
     </div>
   );

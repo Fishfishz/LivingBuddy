@@ -6,6 +6,11 @@ import {
   Marker,
 } from "react-google-maps";
 
+import { mapKey } from "configs/firebaseConfig";
+
+const preLink = "https://maps.googleapis.com/maps/api/js?key=";
+const mapSource = preLink.concat(mapKey.apiKey);
+
 const CustomSkinMap = withScriptjs(
   withGoogleMap(() => (
     <GoogleMap
@@ -84,7 +89,7 @@ const CustomSkinMap = withScriptjs(
 export default function Maps() {
   return (
     <CustomSkinMap
-      googleMapURL="https://maps.googleapis.com/maps/api/js?key=AIzaSyDYluB9LIixAZw9QBzGwTiBjr5a2ITkdG4"
+      googleMapURL={mapSource}
       loadingElement={<div style={{ height: `100%` }} />}
       containerElement={<div style={{ height: `100vh` }} />}
       mapElement={<div style={{ height: `100%` }} />}
