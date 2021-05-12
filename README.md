@@ -14,6 +14,128 @@ LivingBuddy will have the following functionalities:
 ### Layout of the repository:
 - reports - This folder contains the weekly reports that are due 22:00 every Wednesday.
 - LivingBuddy - This folder contains the code for Living Buddy Web App
+- 
+Within the download you'll find the following directories and files:
+
+```
+material-dashboard-react
+.
+├── CHANGELOG.md
+├── ISSUE_TEMPLATE.md
+├── LICENSE.md
+├── README.md
+├── bower.json
+├── gulpfile.js
+├── jsconfig.json
+├── package.json
+├── documentation
+│   ├── assets
+│   │   ├── css
+│   │   ├── img
+│   │   │   └── faces
+│   │   └── js
+│   └── tutorial-components.html
+├── public
+│   ├── favicon.ico
+│   ├── index.html
+│   └── manifest.json
+└── src
+    ├── index.js
+    ├── app.js
+    ├── logo.svg
+    ├── routes.js
+    ├── configs
+    │   ├── firebaseConfig.js
+    ├── assets
+    │   ├── css
+    │   │   └── material-dashboard-react.css
+    │   ├── github
+    │   │   ├── md-react.gif
+    │   │   └── react.svg
+    │   ├── img
+    │   │   └── faces
+    │   └── jss
+    │       ├── material-dashboard-react
+    │       │   ├── components
+    │       │   ├── layouts
+    │       │   └── views
+    │       └── material-dashboard-react.js
+    ├── components
+    │   ├── Auth
+    │   │   ├── sign-in
+    │   │   │   ├── sign-in.js
+    │   │   │   ├── sign-in.css
+    │   │   ├── sign-up
+    │   │   │   ├── sign-up.js
+    │   │   │   ├── sign-up.css
+    │   │   ├── auth.css
+    │   ├── Card
+    │   │   ├── Card.js
+    │   │   ├── CardAvatar.js
+    │   │   ├── CardBody.js
+    │   │   ├── CardFooter.js
+    │   │   ├── CardHeader.js
+    │   │   └── CardIcon.js
+    │   ├── CustomButtons
+    │   │   └── Button.js
+    │   ├── CustomInput
+    │   │   └── CustomInput.js
+    │   ├── CustomTabs
+    │   │   └── CustomTabs.js
+    │   ├── FixedPlugin
+    │   │   └── FixedPlugin.js
+    │   ├── Footer
+    │   │   └── Footer.js
+    │   ├── Grid
+    │   │   ├── GridContainer.js
+    │   │   └── GridItem.js
+    │   ├── Navbars
+    │   │   ├── AdminNavbarLinks.js
+    │   │   ├── Navbar.js
+    │   │   └── RTLNavbarLinks.js
+    │   ├── Sidebar
+    │   │   └── Sidebar.js
+    │   ├── Snackbar
+    │   │   ├── Snackbar.js
+    │   │   └── SnackbarContent.js
+    │   ├── Table
+    │   │   └── Table.js
+    │   ├── Tasks
+    │   │   └── Tasks.js
+    │   └── Typography
+    │       ├── Danger.js
+    │       ├── Info.js
+    │       ├── Muted.js
+    │       ├── Primary.js
+    │       ├── Quote.js
+    │       ├── Success.js
+    │       └── Warning.js
+    ├── layouts
+    │   ├── Admin.js
+    │   └── RTL.js
+    ├── variables
+    │   ├── charts.js
+    │   └── general.js
+    └── views
+        ├── Dashboard
+        │   └── Dashboard.js
+        ├── Icons
+        │   └── Icons.js
+        ├── Maps
+        │   └── Maps.js
+        ├── Notifications
+        │   └── Notifications.js
+        ├── RTLPage
+        │   └── RTLPage.js
+        ├── TableList
+        │   └── TableList.js
+        ├── Typography
+        │   └── Typography.js
+        ├── UpgradeToPro
+        │   └── UpgradeToPro.js
+        └── UserProfile
+            └── UserProfile.js
+```
 ### How to build and test the system:
 ```
 cd LivingBuddy
