@@ -55,7 +55,7 @@ const dashboardRoutes = [
   },
   {
     path: "/table",
-    name: "Table List",
+    name: "Calendar Scheduler",
     rtlName: "قائمة الجدول",
     icon: "content_paste",
     component: TableList,

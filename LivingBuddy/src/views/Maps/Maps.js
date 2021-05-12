@@ -3,14 +3,14 @@ import {
   withScriptjs,
   withGoogleMap,
   GoogleMap,
-  Marker
+  Marker,
 } from "react-google-maps";
 
 const CustomSkinMap = withScriptjs(
   withGoogleMap(() => (
     <GoogleMap
       defaultZoom={13}
-      defaultCenter={{ lat: 40.748817, lng: -73.985428 }}
+      defaultCenter={{ lat: 47.65601306750707, lng: -122.31540106138853 }}
       defaultOptions={{
         scrollwheel: false,
         zoomControl: true,
@@ -20,8 +20,8 @@ const CustomSkinMap = withScriptjs(
             stylers: [
               { saturation: 43 },
               { lightness: -11 },
-              { hue: "#0088ff" }
-            ]
+              { hue: "#0088ff" },
+            ],
           },
           {
             featureType: "road",
@@ -29,51 +29,51 @@ const CustomSkinMap = withScriptjs(
             stylers: [
               { hue: "#ff0000" },
               { saturation: -100 },
-              { lightness: 99 }
-            ]
+              { lightness: 99 },
+            ],
           },
           {
             featureType: "road",
             elementType: "geometry.stroke",
-            stylers: [{ color: "#808080" }, { lightness: 54 }]
+            stylers: [{ color: "#808080" }, { lightness: 54 }],
           },
           {
             featureType: "landscape.man_made",
             elementType: "geometry.fill",
-            stylers: [{ color: "#ece2d9" }]
+            stylers: [{ color: "#ece2d9" }],
           },
           {
             featureType: "poi.park",
             elementType: "geometry.fill",
-            stylers: [{ color: "#ccdca1" }]
+            stylers: [{ color: "#ccdca1" }],
           },
           {
             featureType: "road",
             elementType: "labels.text.fill",
-            stylers: [{ color: "#767676" }]
+            stylers: [{ color: "#767676" }],
           },
           {
             featureType: "road",
             elementType: "labels.text.stroke",
-            stylers: [{ color: "#ffffff" }]
+            stylers: [{ color: "#ffffff" }],
           },
           { featureType: "poi", stylers: [{ visibility: "off" }] },
           {
             featureType: "landscape.natural",
             elementType: "geometry.fill",
-            stylers: [{ visibility: "on" }, { color: "#b8cb93" }]
+            stylers: [{ visibility: "on" }, { color: "#b8cb93" }],
           },
           { featureType: "poi.park", stylers: [{ visibility: "on" }] },
           {
             featureType: "poi.sports_complex",
-            stylers: [{ visibility: "on" }]
+            stylers: [{ visibility: "on" }],
           },
           { featureType: "poi.medical", stylers: [{ visibility: "on" }] },
           {
             featureType: "poi.business",
-            stylers: [{ visibility: "simplified" }]
-          }
-        ]
+            stylers: [{ visibility: "simplified" }],
+          },
+        ],
       }}
     >
       <Marker position={{ lat: 40.748817, lng: -73.985428 }} />
@@ -84,7 +84,7 @@ const CustomSkinMap = withScriptjs(
 export default function Maps() {
   return (
     <CustomSkinMap
-      googleMapURL="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY_HERE"
+      googleMapURL="https://maps.googleapis.com/maps/api/js?key=AIzaSyDYluB9LIixAZw9QBzGwTiBjr5a2ITkdG4"
       loadingElement={<div style={{ height: `100%` }} />}
       containerElement={<div style={{ height: `100vh` }} />}
       mapElement={<div style={{ height: `100%` }} />}
