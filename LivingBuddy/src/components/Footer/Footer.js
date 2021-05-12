@@ -19,22 +19,17 @@ export default function Footer(props) {
           <List className={classes.list}>
             <ListItem className={classes.inlineBlock}>
               <a href="#home" className={classes.block}>
-                Home
+                HOME
               </a>
             </ListItem>
             <ListItem className={classes.inlineBlock}>
-              <a href="#company" className={classes.block}>
-                Company
+              <a href="#PRIVACY" className={classes.block}>
+                PRIVACY
               </a>
             </ListItem>
             <ListItem className={classes.inlineBlock}>
-              <a href="#portfolio" className={classes.block}>
-                Portfolio
-              </a>
-            </ListItem>
-            <ListItem className={classes.inlineBlock}>
-              <a href="#blog" className={classes.block}>
-                Blog
+              <a href="#TERMS" className={classes.block}>
+                TERMS
               </a>
             </ListItem>
           </List>
@@ -43,13 +38,13 @@ export default function Footer(props) {
           <span>
             &copy; {1900 + new Date().getYear()}{" "}
             <a
-              href="https://www.creative-tim.com?ref=mdr-footer"
+              href="living-buddy.web.app"
               target="_blank"
               className={classes.a}
             >
-              Creative Tim
+              Living Buddy
             </a>
-            , made with love for a better web
+            , UNIVERSITY OF WASHINGTON
           </span>
         </p>
       </div>
