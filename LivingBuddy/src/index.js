@@ -17,7 +17,7 @@
 */
 import React from "react";
 import ReactDOM from "react-dom";
-import "assets/css/material-dashboard-react.css?v=1.9.0";
+import "assets/css/material-dashboard-react.css";
 import { BrowserRouter } from "react-router-dom";
 import App from "./app";
 import firebase from "firebase";
@@ -40,10 +40,11 @@ export const db = firebase.firestore;
 
 
 ReactDOM.render(
-  <React.StrictMode>
     <BrowserRouter>
-      <App />
+        <React.StrictMode>
+            <App />
+        </React.StrictMode>
     </BrowserRouter>
-  </React.StrictMode>,
+  ,
   document.getElementById("root")
 );
