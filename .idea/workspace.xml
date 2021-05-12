@@ -2,18 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4261a069-1909-418b-a092-97502a8a5d1a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/LivingBuddy/src/app.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/LivingBuddy/src/components/auth/auth.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/LivingBuddy/src/components/auth/sign-in/sign-in.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/LivingBuddy/src/components/auth/sign-up/sign-up.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LivingBuddy/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/LivingBuddy/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LivingBuddy/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/LivingBuddy/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LivingBuddy/src/components/Navbars/AdminNavbarLinks.js" beforeDir="false" afterPath="$PROJECT_DIR$/LivingBuddy/src/components/Navbars/AdminNavbarLinks.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LivingBuddy/src/components/auth/sign-in/sign-in.js" beforeDir="false" afterPath="$PROJECT_DIR$/LivingBuddy/src/components/auth/sign-in/sign-in.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LivingBuddy/src/components/auth/sign-up/sign-up.js" beforeDir="false" afterPath="$PROJECT_DIR$/LivingBuddy/src/components/auth/sign-up/sign-up.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LivingBuddy/src/configs/firebaseConfig.js" beforeDir="false" afterPath="$PROJECT_DIR$/LivingBuddy/src/configs/firebaseConfig.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/LivingBuddy/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/LivingBuddy/src/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LivingBuddy/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/LivingBuddy/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -93,5 +83,6 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
 </project>
