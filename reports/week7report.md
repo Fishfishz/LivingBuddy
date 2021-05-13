@@ -34,9 +34,16 @@ Yazan
   - Keep the living document updated
 
 Andy
--
--
--
+- Goals from last week: 
+  - Basic html design for Calendar Schedule with Frank
+  - Meet during weekend
+  - Next week: create the landing page for Calendar Schedule.
+What I have done:
+  - Worked on the reflection slides for the presentation for beta release. Summarized our original plans and changes to the plans for process/timeline, architecture/design, and testing/tooling.
+  - Contributed to the presentation on the login feature, the calendar schedule feature, and the overall reflection. 
+Goals:
+  - Continue implementing Calendar Schedule
+  - Create landing page for Calendar Schedule
 
 Chris
  - Goals from last week:
