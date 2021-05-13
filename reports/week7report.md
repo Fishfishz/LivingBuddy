@@ -24,7 +24,8 @@ Frank
   - Add more documentation for users and developers
 
 Yazan
--
+- Goals from a week ago:
+  - 
 -
 -
 
