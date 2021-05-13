@@ -13,9 +13,15 @@ Team Report:
 Individual Report:
 
 Frank
--
--
--
+- Goals from a week ago: 
+  - Finish the basic html and components design and implementation for the calendar scheduler with Andy
+  - Add a test suite along with the implementation.
+- what you did, what worked, what you learned, where you had trouble, and where you are stuck:
+  - I have implemented the table view of the CalendarScheduler and added some fake data for the beta release. I also used the Google Map API from Google Cloud platform to implement the Map page which would show the University of Washington area. I was having trouble implementing the sign-in and sign-out function, specifically adding the Google firebase library into our project. I was able to figure out by resetting the react version in the dependencies. 
+- Goals for the following week: 
+  - Finish the implementation of CalendarScheduler with Andy
+  - Add more tests for CalendarScheduler
+  - Add more documentation for users and developers
 
 Yazan
 -
