@@ -25,9 +25,13 @@ Frank
 
 Yazan
 - Goals from a week ago:
-  - 
--
--
+  - I will be working with Chris to finalize the dashboard UI and start the coding part for it.
+  - I will also be working on our next assignment.
+- what you did, what worked, what you learned, where you had trouble, and where you are stuck:
+  - I worked on the implementation of the Dashboard feature of our web-app alongside Chris. I integrated our firebase Realtime database with it so that everytime a user inputs the event information, it is stored in the firebase db and then fetched right away so that it can be displayed as a card on the dashboard.
+- Goals for the following week: 
+  - I will start working on the chat feature of our webapp
+  - Keep the living document updated
 
 Andy
 -
