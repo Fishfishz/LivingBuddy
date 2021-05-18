@@ -18,7 +18,7 @@ LivingBuddy will have the following functionalities:
 Within the download you'll find the following directories and files:
 
 ```
-material-dashboard-react
+LivingBuddy
 .
 ├── CHANGELOG.md
 ├── ISSUE_TEMPLATE.md
