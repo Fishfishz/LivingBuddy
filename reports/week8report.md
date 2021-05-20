@@ -15,9 +15,22 @@ Team Report:
 Individual Report:
 
 Frank
--
--
--
+- Goals from last week: 
+  - Finish the implementation of CalendarScheduler with Andy
+  - Add more tests for CalendarScheduler
+  - Add more documentation for users and developers
+
+- What I have done:
+   - Set up the Gitguardian for the project to make sure that our secret user token is not exposed publicly.
+   - Added tests for sign-up and sign-in
+   - Set up the Google firestore for CalendarScheduler, finalize the schema design.
+   - Write the developers documentation and updated in the Github. 
+
+- Goals:
+   - Link the CalendarScheduler to the backend Google firebase.
+   - Finish implementing the CalendarScheduler
+   - Add more tests for components.
+
 
 Yazan
 -
