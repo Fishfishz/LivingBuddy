@@ -33,9 +33,17 @@ Frank
 
 
 Yazan
--
--
--
+- Goals from last wee:
+ - I will start working on the chat feature of our webapp
+ - Keep the living document updated
+ 
+- What I have done:
+ - Discussed the layout of the Chat function with Chris.
+ - Worked on the documentation for our git Repo.
+ 
+- Goals for next week:
+ - Start the implementation of Chat fucntion 
+ - Add tests for it.
 
 Andy
 - Goals from last week: 
