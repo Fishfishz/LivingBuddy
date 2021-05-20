@@ -25,9 +25,17 @@ Yazan
 -
 
 Andy
--
--
--
+- Goals from last week: 
+   - Continue implementing Calendar Schedule
+   - Create landing page for Calendar Schedule
+
+- What I have done:
+   - Created Andy branch to work on Calendar Schedule. Created a simple landing page for Calendar Schedule using react switch. There are two buttons, one for rooms and one for equipment. Users can click on either one to open up the table that shows all the available rooms/equipment in the dorm. (Originally I was able to make the table open in a new page, but the rooms and equipments tab showed up on the side bar, so I had to scratch that).
+   - Created pull request for the new update on Calendar Schedule. 
+
+- Goals:
+   - Make buttons bigger for the landing page, and make it squares that divide the page.
+   - Make the rooms and equipments table show up in a new tab.
 
 Chris
  - Goals from last week:
