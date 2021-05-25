@@ -2,8 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4261a069-1909-418b-a092-97502a8a5d1a" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/LivingBuddy/src/configs/firebaseConfig.js" beforeDir="false" afterPath="$PROJECT_DIR$/LivingBuddy/src/configs/firebaseConfig.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LivingBuddy/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/LivingBuddy/src/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LivingBuddy/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/LivingBuddy/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LivingBuddy/src/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/LivingBuddy/src/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LivingBuddy/src/views/ChatThread/ChatThread.js" beforeDir="false" afterPath="$PROJECT_DIR$/LivingBuddy/src/views/ChatThread/ChatThread.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LivingBuddy/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/LivingBuddy/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,10 +39,12 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/LivingBuddy/src/tests" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.standard" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.standard" value="" />
     <property name="nodejs_package_manager_path" value="yarn" />
@@ -67,6 +72,7 @@
       <workItem from="1620336025786" duration="104000" />
       <workItem from="1620695093055" duration="270000" />
       <workItem from="1620695406799" duration="3914000" />
+      <workItem from="1621908606500" duration="1071000" />
     </task>
     <servers />
   </component>

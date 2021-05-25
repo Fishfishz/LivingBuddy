@@ -9,6 +9,11 @@ import SignUp from "./components/auth/sign-up/sign-up";
 import SignIn from "./components/auth/sign-in/sign-in";
 import firebase from "firebase";
 
+//////
+
+
+
+
 const firebaseConfig = {
   apiKey: "AIzaSyBdicI_-M0lIrJRNdczUdlhtrludFMa4IA",
   authDomain: "livingbuddy-75295.firebaseapp.com",
