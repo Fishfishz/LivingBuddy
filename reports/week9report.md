@@ -28,8 +28,8 @@ Frank
 
 Yazan
 - Goals from last week:
- - Start the implementation of Chat fucntion
- - Add tests for it.
+   - Start the implementation of Chat fucntion
+   - Add tests for it.
  
 - What I have done:
  - I completed the peer review assignment
