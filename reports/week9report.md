@@ -32,12 +32,12 @@ Yazan
    - Add tests for it.
  
 - What I have done:
- - I completed the peer review assignment
- - Held meetings with Chris to implement the Chat function for LivingBuddy and discussed various approaches for it. We finished the basic functionality of the Chat Thread.
+   - I completed the peer review assignment
+   - Held meetings with Chris to implement the Chat function for LivingBuddy and discussed various approaches for it. We finished the basic functionality of the Chat Thread.
  
 - Goals for next weeek:
- - Finish up the Chat Thread and fix the bugs.
- - Do the demo presentation.
+   - Finish up the Chat Thread and fix the bugs.
+   - Do the demo presentation.
 
 Andy
 - Goals from last week: 
