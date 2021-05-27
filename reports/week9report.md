@@ -23,9 +23,16 @@ Yazan
 -
 
 Andy
--
--
--
+- Goals from last week: 
+  - Make buttons bigger for the landing page, and make it squares that divide the page.
+  - Make the rooms and equipments table show up in a new tab.
+- What I have done:
+  - Reviewed screw the review’s team’s assignment. Talked about what I think they did well and what they might be able to improve on. Overall it was a great project so there wasn’t a lot I can point out. Only made some minor suggestions on the way they organized documentations and code. Did it because I got confused from the two repos they have, one for server and one for rest of the code.
+- Goals:
+  - Make buttons bigger for the landing page, and make it squares that divide the page.
+  - Make the rooms and equipments table show up in a new tab.
+  - Make the rooms and equipments table show more information about the subject.
+
 
 Chris
  - Goals from last week:
