@@ -13,9 +13,19 @@ Team Report:
 Individual Report:
 
 Frank
--
--
--
+
+- Goals from last week:
+ - Link the CalendarScheduler to the backend Google firebase.
+ - Finish implementing the CalendarScheduler
+ - Add more tests for components.
+What I have done:
+ - Reviewed ChoredCenter project and provided feedback
+ - Finished the CalendarScheduler functionality with backend Google firebase.
+Goals:
+  - fix the bugs in the CalendarScheduler
+  - Prepare for the final presentation
+  - improve the implementation based on feedback
+
 
 Yazan
 - Goals from last week:
