@@ -68,12 +68,12 @@ export default function ChatThread() {
       };
       ref.push(message);
     }
-    input.value = ""; 
+    input.value = "";
   };
 
   
   const thread = messages.map(message => (
-    <GridContainer >
+    <GridContainer>
       <GridItem xs={12} sm={12} md={3}>
         <Card chart >
           <CardBody>
@@ -94,9 +94,12 @@ export default function ChatThread() {
         const sent = json.from === myName && json.to === friendName;
         const received = json.from === friendName && json.to === myName;
         console.log(friendName);
-        if(sent || received) {
-          newState.push(json);
+        if (sent) {
         }
+        // if (sent || received) {
+        //   newState.push(json);
+        // }
+
       }
       setMessages(newState);
     });
