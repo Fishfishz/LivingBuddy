@@ -72,17 +72,23 @@ export default function ChatThread() {
   };
 
   
-  const thread = messages.map(message => (
-    <GridContainer>
+  const thread = messages.map(message => {
+    const fromMe = message.from == myName;
+    let style = "";
+    if(fromMe) {
+      style = "flex-end";
+    }
+    return (
+    <GridContainer justify={style}>
       <GridItem xs={12} sm={12} md={3}>
-        <Card chart >
-          <CardBody>
+        <Card chart>
+          <CardBody >
             <p>{message.text}</p>
           </CardBody>
         </Card>
       </GridItem>
     </GridContainer>
-  ));
+  )});
 
   useEffect(() => {
     const ref = fb.database().ref("messages");
@@ -94,12 +100,9 @@ export default function ChatThread() {
         const sent = json.from === myName && json.to === friendName;
         const received = json.from === friendName && json.to === myName;
         console.log(friendName);
-        if (sent) {
+        if (sent || received) {
+           newState.push(json);
         }
-        // if (sent || received) {
-        //   newState.push(json);
-        // }
-
       }
       setMessages(newState);
     });
