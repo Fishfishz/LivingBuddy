@@ -41,7 +41,7 @@ const styles = {
 
 const useStyles = makeStyles(styles);
 
-export default function TableList() {
+export default function Equipments() {
   const classes = useStyles();
   return (
     <GridContainer>
@@ -70,36 +70,6 @@ export default function TableList() {
                 ["MapleHallWasher1", "True", "Chris", "60", "MapleHall First Floor"],
                 ["MapleHallWasher2", "True", "Yazan", "70", "MapleHall First Floor"],
                 ["MapleHallWasher3", "False", "null", "0", "MapleHall First Floor"],
-              ]}
-            />
-          </CardBody>
-        </Card>
-      </GridItem>
-      <GridItem xs={12} sm={12} md={12}>
-        <Card plain>
-          <CardHeader plain color="primary">
-            <h4 className={classes.cardTitleWhite}>Room Booking</h4>
-            <p className={classes.cardCategoryWhite}>
-              Check all the rooms availability
-            </p>
-          </CardHeader>
-          <CardBody>
-            <Table
-              tableHeaderColor="primary"
-              tableHead={[
-                "ID",
-                "Availability",
-                "Booked by whom",
-                "Time left(in min)",
-                "Location",
-              ]}
-              tableData={[
-                  ["MapleHallPianoRoom1", "True", "Frank", "60", "MapleHall First Floor"],
-                  ["MapleHallPianoRoom2", "True", "Andy", "50", "MapleHall First Floor"],
-                  ["MapleHallPianoRoom3", "False", "null", "0", "MapleHall First Floor"],
-                  ["MapleHallStudyRoom1", "True", "Chris", "60", "MapleHall Second Floor"],
-                  ["MapleHallStudyRoom2", "True", "Yazan", "70", "MapleHall Third Floor"],
-                  ["MapleHallStudyRoom3", "False", "null", "0", "MapleHall Fourth Floor"],
               ]}
             />
           </CardBody>
