@@ -41,8 +41,8 @@ export default function Landing() {
   const classes = useStyles();
   return (
     <Router>
-      <Link to={'/admin/rooms'}><button>Rooms</button></Link>
-      <Link to={'/admin/equipments'}><button>Equipments</button></Link>
+      <Link to={'/admin/rooms'}><button style={{height: '50px', width : '100px'}}>Rooms</button></Link>
+      <Link to={'/admin/equipments'}><button style={{height: '50px', width : '100px'}}>Equipments</button></Link>
       <Switch>
         <Route path='/admin/rooms' component={Rooms} />
         <Route path='/admin/equipments' component={Equipments} />
