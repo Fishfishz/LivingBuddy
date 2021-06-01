@@ -16,6 +16,7 @@ const SignIn = ({ setSignedIn }) => {
       .then((res) => {
         setSignedIn(true);
         sessionStorage.setItem("signedIn", true);
+        sessionStorage.setItem("email", email);
         history.push("/admin/dashboard");
       })
       .catch((error) => {

@@ -2,8 +2,9 @@ import React from "react";
 // @material-ui/core components
 import { Switch, BrowserRouter as Router, Route, Link } from "react-router-dom";
 import { makeStyles } from "@material-ui/core/styles";
-import Rooms from "./Rooms.js";
 import Equipments from "./Equipments.js";
+import { fb } from "../../app.js";
+import RoomTable from "./table.js";
 
 const styles = {
   cardCategoryWhite: {
@@ -37,16 +38,61 @@ const styles = {
 
 const useStyles = makeStyles(styles);
 
-export default function Landing() {
-  const classes = useStyles();
+const Landing = () => {
+  var checked = true;
+  const [roomData, setRoomData] = React.useState(false);
+  const [filteredRoomData, setFilteredRoomData] = React.useState(false);
+  const [bookedRoomData, setBookedRoomData] = React.useState(false);
+  const [loading, setLoading] = React.useState(false);
+
+  React.useEffect(() => {
+    getRooms();
+  }, [!checked]);
+
+  const getRooms = () => {
+    setLoading(true);
+
+    const loadingTimeOut = setTimeout(() => {
+      setLoading(false);
+    }, 5000);
+
+    const ref = fb.firestore().collection("rooms");
+    ref.onSnapshot((querySnapShot) => {
+      const items = [];
+      const filteredItems = [];
+      const bookedItems = [];
+      querySnapShot.forEach((doc) => {
+        items.push(doc.data());
+        if (doc.data().availability === true) {
+          filteredItems.push(doc.data());
+        } else {
+          bookedItems.push(doc.data());
+        }
+      });
+      setRoomData(items);
+      setFilteredRoomData(filteredItems);
+      setBookedRoomData(bookedItems);
+      console.log(filteredRoomData.length);
+      clearTimeout(loadingTimeOut);
+      setLoading(false);
+      checked = true;
+    });
+  };
+
   return (
     <Router>
-      <Link to={'/admin/rooms'}><button>Rooms</button></Link>
-      <Link to={'/admin/equipments'}><button>Equipments</button></Link>
+      <Link to={"/admin/rooms"}>
+        <button onClick={getRooms}>Rooms</button>
+      </Link>
+      <Link to={"/admin/equipments"}>
+        <button>Equipments</button>
+      </Link>
       <Switch>
-        <Route path='/admin/rooms' component={Rooms} />
-        <Route path='/admin/equipments' component={Equipments} />
+        <Route path="/admin/rooms" render={() => <RoomTable data={roomData} filteredData={filteredRoomData} bookedData={bookedRoomData} />} />
+        <Route path="/admin/equipments" component={Equipments} />
       </Switch>
     </Router>
   );
-}
+};
+
+export default Landing;
