@@ -1,6 +1,6 @@
 import React from "react";
 // @material-ui/core components
-import { makeStyles } from "@material-ui/core/styles";
+// import { makeStyles } from "@material-ui/core/styles";
 // core components
 import GridItem from "components/Grid/GridItem.js";
 import GridContainer from "components/Grid/GridContainer.js";
@@ -8,6 +8,8 @@ import Table from "components/Table/Table.js";
 import Card from "components/Card/Card.js";
 import CardHeader from "components/Card/CardHeader.js";
 import CardBody from "components/Card/CardBody.js";
+import { db } from "../../app";
+
 
 const styles = {
   cardCategoryWhite: {
@@ -39,42 +41,62 @@ const styles = {
   },
 };
 
-const useStyles = makeStyles(styles);
+class RoomApp extends React.Component {
+  state = { 
+    equipments: null,
+    allEquipment: []
+  }
 
-export default function Equipments() {
-  const classes = useStyles();
-  return (
-    <GridContainer>
+  componentDidMount() {
+    console.log('mounted')
+    db.collection('equipments')
+      .get()
+      .then( snapshot => {
+        const equipments = []
+        const allEquipment = []
+        snapshot.forEach( doc => {
+          const data = doc.data()
+          equipments.push(data)
+        })
+        this.setState({ equipments: equipments })
+        this.state.equipments.map( equipments => {
+          const singleEquipment = []
+          singleEquipment.push(equipments.id, equipments.availability)
+          singleEquipment.push(equipments.availability)
+          allEquipment.push([equipments.id, equipments.availability.toString(), equipments.reserved, equipments.timeLeft, equipments.location])
+        })
+        this.setState({ allEquipment: allEquipment})
+        // console.log(snapshot)
+      })
+      .catch( error => console.log(error))
+  }
+
+  render() {
+    return (
+      <GridContainer>
       <GridItem xs={12} sm={12} md={12}>
         <Card>
           <CardHeader color="primary">
-            <h4 className={classes.cardTitleWhite}>Equipment booking</h4>
-            <p className={classes.cardCategoryWhite}>
-              Check all the equipments availability
-            </p>
+            <h4 className={styles.cardTitleWhite}>Equipment booking</h4>
           </CardHeader>
           <CardBody>
-            <Table
-              tableHeaderColor="primary"
-              tableHead={[
-                "ID",
-                "Availability",
-                "Booked by whom",
-                "Time left(in min)",
-                "Location",
-              ]}
-              tableData={[
-                ["MapleHallDryer1", "True", "Frank", "60", "MapleHall First Floor"],
-                ["MapleHallDryer2", "True", "Andy", "50", "MapleHall First Floor"],
-                ["MapleHallDryer3", "False", "null", "0", "MapleHall First Floor"],
-                ["MapleHallWasher1", "True", "Chris", "60", "MapleHall First Floor"],
-                ["MapleHallWasher2", "True", "Yazan", "70", "MapleHall First Floor"],
-                ["MapleHallWasher3", "False", "null", "0", "MapleHall First Floor"],
-              ]}
-            />
+          <Table
+            tableHeaderColor="primary"
+            tableHead={[
+              "ID",
+              "Availability",
+              "Booked by whom",
+              "Time left(in min)",
+              "Location",
+            ]}
+            tableData={this.state.allEquipment}
+          />
           </CardBody>
         </Card>
       </GridItem>
-    </GridContainer>
-  );
+      </GridContainer>
+    )
+  }
 }
+
+export default RoomApp;

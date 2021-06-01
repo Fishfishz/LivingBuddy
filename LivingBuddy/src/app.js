@@ -23,7 +23,7 @@ const firebaseConfig = {
 firebase.initializeApp(firebaseConfig);
 export const fb = firebase;
 export const Auth = firebase.auth();
-export const db = firebase.firestore;
+export const db = firebase.firestore();
 
 const App = () => {
   const [signedIn, setSignedIn] = React.useState(
