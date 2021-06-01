@@ -1,5 +1,9 @@
 # LivingBuddy
 
+[User Guide](userGuide.md)
+
+[Developer Guide](devGuide.md)
+
 ### Project Idea:
 For those living on campus… have you ever went all the way done to the first floor for exercising but found out that all the equipment is in use？Have you ever had a burning question for your RA but did not know how to reach them? Have you ever had an exam in the morning but cannot fall asleep because upstairs was drumming? The living buddy is here for you! It’s an app to tell you the status of the utility equipment/rooms in your dorm, to get you up to date with everything you need to know about your dorm, and to get you connected with RAs and fellow students.
 
@@ -18,7 +22,7 @@ LivingBuddy will have the following functionalities:
 Within the download you'll find the following directories and files:
 
 ```
-material-dashboard-react
+LivingBuddy
 .
 ├── CHANGELOG.md
 ├── ISSUE_TEMPLATE.md

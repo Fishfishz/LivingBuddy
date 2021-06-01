@@ -26,15 +26,17 @@ import Unarchive from "@material-ui/icons/Unarchive";
 import Language from "@material-ui/icons/Language";
 // core components/views for Admin layout
 import DashboardPage from "views/Dashboard/Dashboard.js";
-import UserProfile from "views/UserProfile/UserProfile.js";
+import ChatThread from "views/ChatThread/ChatThread.js";
+// import TableList from "views/TableList/TableList.js";
+// import Typography from "views/Typography/Typography.js";
+// import Icons from "views/Icons/Icons.js";
+// import UserProfile from "views/UserProfile/UserProfile.js";
 import Landing from "views/TableList/Landing.js";
-import Typography from "views/Typography/Typography.js";
-import Icons from "views/Icons/Icons.js";
 import Maps from "views/Maps/Maps.js";
-import NotificationsPage from "views/Notifications/Notifications.js";
-import UpgradeToPro from "views/UpgradeToPro/UpgradeToPro.js";
+// import NotificationsPage from "views/Notifications/Notifications.js";
+// import UpgradeToPro from "views/UpgradeToPro/UpgradeToPro.js";
 // core components/views for RTL layout
-import RTLPage from "views/RTLPage/RTLPage.js";
+// import RTLPage from "views/RTLPage/RTLPage.js";
 
 const dashboardRoutes = [
   {
@@ -47,10 +49,10 @@ const dashboardRoutes = [
   },
   {
     path: "/user",
-    name: "User Profile",
+    name: "ChatThread",
     rtlName: "ملف تعريفي للمستخدم",
     icon: Person,
-    component: UserProfile,
+    component: ChatThread,
     layout: "/admin"
   },
   {
@@ -62,22 +64,6 @@ const dashboardRoutes = [
     layout: "/admin"
   },
   {
-    path: "/typography",
-    name: "Typography",
-    rtlName: "طباعة",
-    icon: LibraryBooks,
-    component: Typography,
-    layout: "/admin"
-  },
-  {
-    path: "/icons",
-    name: "Icons",
-    rtlName: "الرموز",
-    icon: BubbleChart,
-    component: Icons,
-    layout: "/admin"
-  },
-  {
     path: "/maps",
     name: "Maps",
     rtlName: "خرائط",
@@ -85,14 +71,6 @@ const dashboardRoutes = [
     component: Maps,
     layout: "/admin"
   },
-  {
-    path: "/notifications",
-    name: "Notifications",
-    rtlName: "إخطارات",
-    icon: Notifications,
-    component: NotificationsPage,
-    layout: "/admin"
-  }
 ];
 
 export default dashboardRoutes;

@@ -1,9 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="4261a069-1909-418b-a092-97502a8a5d1a" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/LivingBuddy/src/configs/firebaseConfig.js" beforeDir="false" afterPath="$PROJECT_DIR$/LivingBuddy/src/configs/firebaseConfig.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LivingBuddy/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/LivingBuddy/src/index.js" afterDir="false" />
+    <list default="true" id="4261a069-1909-418b-a092-97502a8a5d1a" name="Default Changelist" comment="Chat thread template complete">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LivingBuddy/src/routes.js" beforeDir="false" afterPath="$PROJECT_DIR$/LivingBuddy/src/routes.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LivingBuddy/src/views/ChatThread/ChatThread.js" beforeDir="false" afterPath="$PROJECT_DIR$/LivingBuddy/src/views/ChatThread/ChatThread.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LivingBuddy/src/views/Icons/Icons.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/LivingBuddy/src/views/Notifications/Notifications.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/LivingBuddy/src/views/RTLPage/RTLPage.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/LivingBuddy/src/views/Typography/Typography.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/LivingBuddy/src/views/UpgradeToPro/UpgradeToPro.js" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,6 +79,19 @@
       <recent name="E:\CSE403\LivingBuddy\LivingBuddy\src" />
       <recent name="E:\CSE403\LivingBuddy\LivingBuddy\src\components\auth\sign-in" />
     </key>
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
