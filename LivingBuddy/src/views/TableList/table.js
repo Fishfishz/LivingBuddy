@@ -11,9 +11,8 @@ import TableFooter from "@material-ui/core/TableFooter";
 import TablePaginationActions from "./pagenation";
 import TablePagination from "@material-ui/core/TablePagination";
 import Book from "./book.js";
-//import "./table.css";
 
-const RoomTable = ({ data, filteredData, bookedData }) => {
+const RoomTable = ({ data, filteredData, bookedData, service }) => {
   const MAX_STRING_SIZE = {
     survey_name: 30,
     survey_association: 20,
@@ -165,7 +164,7 @@ const RoomTable = ({ data, filteredData, bookedData }) => {
           </TableFooter>
         </Table>
       </TableContainer>
-      <Book data={filteredData} bookedData={bookedData} />
+      <Book data={filteredData} bookedData={bookedData} service={service}/>
     </div>
   );
 };

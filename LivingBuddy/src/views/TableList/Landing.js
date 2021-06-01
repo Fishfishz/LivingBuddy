@@ -5,6 +5,7 @@ import { makeStyles } from "@material-ui/core/styles";
 import Equipments from "./Equipments.js";
 import { fb } from "../../app.js";
 import RoomTable from "./table.js";
+import "./Landing.css";
 
 const styles = {
   cardCategoryWhite: {
@@ -43,10 +44,16 @@ const Landing = () => {
   const [roomData, setRoomData] = React.useState(false);
   const [filteredRoomData, setFilteredRoomData] = React.useState(false);
   const [bookedRoomData, setBookedRoomData] = React.useState(false);
+
+  const [equData, setEquData] = React.useState(false);
+  const [filteredEquData, setFilteredEquData] = React.useState(false);
+  const [bookedEquData, setBookedEquData] = React.useState(false);
+
   const [loading, setLoading] = React.useState(false);
 
   React.useEffect(() => {
     getRooms();
+    getEquipments();
   }, [!checked]);
 
   const getRooms = () => {
@@ -79,17 +86,48 @@ const Landing = () => {
     });
   };
 
+  const getEquipments = () => {
+    setLoading(true);
+
+    const loadingTimeOut = setTimeout(() => {
+      setLoading(false);
+    }, 5000);
+
+    const ref = fb.firestore().collection("equipments");
+    ref.onSnapshot((querySnapShot) => {
+      const items1 = [];
+      const filteredItems1 = [];
+      const bookedItems1 = [];
+      querySnapShot.forEach((doc) => {
+        console.log(doc.data());
+        items1.push(doc.data());
+        if (doc.data().availability === true) {
+          filteredItems1.push(doc.data());
+        } else {
+          bookedItems1.push(doc.data());
+        }
+      });
+      setEquData(items1);
+      setFilteredEquData(filteredItems1);
+      setBookedEquData(bookedItems1);
+      console.log(equData.length);
+      clearTimeout(loadingTimeOut);
+      setLoading(false);
+      checked = true;
+    });
+  };
+
   return (
     <Router>
       <Link to={"/admin/rooms"}>
-        <button onClick={getRooms}>Rooms</button>
+        <button id="r1" onClick={getRooms}>Rooms</button>
       </Link>
       <Link to={"/admin/equipments"}>
-        <button>Equipments</button>
+        <button id="r2" onClick={getEquipments}>Equipments</button>
       </Link>
       <Switch>
-        <Route path="/admin/rooms" render={() => <RoomTable data={roomData} filteredData={filteredRoomData} bookedData={bookedRoomData} />} />
-        <Route path="/admin/equipments" component={Equipments} />
+        <Route path="/admin/rooms" render={() => <RoomTable data={roomData} filteredData={filteredRoomData} bookedData={bookedRoomData} service={"rooms"} />} />
+        <Route path="/admin/equipments" render={() => <RoomTable data={equData} filteredData={filteredEquData} bookedData={bookedEquData} service={"equipments"}/>} />
       </Switch>
     </Router>
   );

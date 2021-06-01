@@ -2,9 +2,7 @@ import React from "react";
 import { fb } from "../../app.js";
 import "./book.css";
 
-const Book = ({ data, bookedData }) => {
-  const temp = data;
-
+const Book = ({ data, bookedData, service }) => {
   const [id, setId] = React.useState(0);
   const [time, setTime] = React.useState(0);
 
@@ -43,7 +41,7 @@ const Book = ({ data, bookedData }) => {
   const handleSubmitBook = (event) => {
     event.preventDefault();
     fb.firestore()
-      .collection("rooms")
+      .collection(service)
       .doc(id)
       .update({
         timeLeft: time,
@@ -54,28 +52,25 @@ const Book = ({ data, bookedData }) => {
 
   const handleCancel = (event) => {
     event.preventDefault();
-    fb.firestore()
-        .collection("rooms")
-        .doc(id)
-        .update({
-          timeLeft: 0,
-          reserved: "none",
-          availability: true,
-        });
+    fb.firestore().collection(service).doc(id).update({
+      timeLeft: 0,
+      reserved: "none",
+      availability: true,
+    });
   };
 
   return (
     <div>
-      <h2>
-        Booking
-      </h2>
+      <h2>Booking</h2>
       <form onSubmit={handleSubmitBook}>
-        <p>Select the service you want to book</p>
-        <select onClick={handleChangeId}>
-          {data.map((element) => (
-            <option value={element.id}>{element.id}</option>
-          ))}
-        </select>
+        <div>
+          <p>Select the service you want to book</p>
+          <select id="bookSelect" onClick={handleChangeId}>
+            {data.map((element) => (
+              <option value={element.id}>{element.id}</option>
+            ))}
+          </select>
+        </div>
 
         <div>
           <p>How long do you want to reserve the service?(in minutes)</p>
@@ -88,16 +83,16 @@ const Book = ({ data, bookedData }) => {
         </div>
         <input type="submit" value="Submit" />
       </form>
-      <h2>
-        End Booking
-      </h2>
+      <h2>End Booking</h2>
       <form onSubmit={handleCancel}>
-        <p>Select the service you want to finish reserving</p>
-        <select onClick={handleChangeId}>
-          {bookedData.map((element) => (
-            <option value={element.id}>{element.id}</option>
-          ))}
-        </select>
+        <div>
+          <p>Select the service you want to finish reserving</p>
+          <select id="cancelSelect" onClick={handleChangeId}>
+            {bookedData.map((element) => (
+              <option value={element.id}>{element.id}</option>
+            ))}
+          </select>
+        </div>
         <input type="submit" value="End Booking!" />
       </form>
     </div>
