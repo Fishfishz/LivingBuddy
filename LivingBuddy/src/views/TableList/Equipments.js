@@ -44,37 +44,75 @@ const useStyles = makeStyles(styles);
 export default function Equipments() {
   const classes = useStyles();
   return (
-    <GridContainer>
-      <GridItem xs={12} sm={12} md={12}>
-        <Card>
-          <CardHeader color="primary">
-            <h4 className={classes.cardTitleWhite}>Equipment booking</h4>
-            <p className={classes.cardCategoryWhite}>
-              Check all the equipments availability
-            </p>
-          </CardHeader>
-          <CardBody>
-            <Table
-              tableHeaderColor="primary"
-              tableHead={[
-                "ID",
-                "Availability",
-                "Booked by whom",
-                "Time left(in min)",
-                "Location",
-              ]}
-              tableData={[
-                ["MapleHallDryer1", "True", "Frank", "60", "MapleHall First Floor"],
-                ["MapleHallDryer2", "True", "Andy", "50", "MapleHall First Floor"],
-                ["MapleHallDryer3", "False", "null", "0", "MapleHall First Floor"],
-                ["MapleHallWasher1", "True", "Chris", "60", "MapleHall First Floor"],
-                ["MapleHallWasher2", "True", "Yazan", "70", "MapleHall First Floor"],
-                ["MapleHallWasher3", "False", "null", "0", "MapleHall First Floor"],
-              ]}
-            />
-          </CardBody>
-        </Card>
-      </GridItem>
-    </GridContainer>
+    <div>
+      <GridContainer>
+        <GridItem xs={12} sm={12} md={12}>
+          <Card>
+            <CardHeader color="primary">
+              <h4 className={classes.cardTitleWhite}>Equipment booking</h4>
+              <p className={classes.cardCategoryWhite}>
+                Check all the equipments availability
+              </p>
+            </CardHeader>
+            <CardBody>
+              <Table
+                tableHeaderColor="primary"
+                tableHead={[
+                  "ID",
+                  "Availability",
+                  "Booked by whom",
+                  "Time left(in min)",
+                  "Location",
+                ]}
+                tableData={[
+                  [
+                    "MapleHallDryer1",
+                    "True",
+                    "Frank",
+                    "60",
+                    "MapleHall First Floor",
+                  ],
+                  [
+                    "MapleHallDryer2",
+                    "True",
+                    "Andy",
+                    "50",
+                    "MapleHall First Floor",
+                  ],
+                  [
+                    "MapleHallDryer3",
+                    "False",
+                    "null",
+                    "0",
+                    "MapleHall First Floor",
+                  ],
+                  [
+                    "MapleHallWasher1",
+                    "True",
+                    "Chris",
+                    "60",
+                    "MapleHall First Floor",
+                  ],
+                  [
+                    "MapleHallWasher2",
+                    "True",
+                    "Yazan",
+                    "70",
+                    "MapleHall First Floor",
+                  ],
+                  [
+                    "MapleHallWasher3",
+                    "False",
+                    "null",
+                    "0",
+                    "MapleHall First Floor",
+                  ],
+                ]}
+              />
+            </CardBody>
+          </Card>
+        </GridItem>
+      </GridContainer>
+    </div>
   );
 }
