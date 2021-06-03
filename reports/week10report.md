@@ -13,11 +13,15 @@ Individual Report:
 
 Frank
 - Goals from last week:
-  - 
+  - fix the bugs in the CalendarScheduler
+  - Prepare for the final presentation
+  - improve the implementation based on feedback
 - What I have done:
-   - 
+   - CalendarScheduler is implemented with view, booking and cancel booking functions. 
+   - Map function bug(developer mod) is fixed.
+   - Finished the final release presentation and demo video with the team.
 - Goals:
-    - 
+  - Complete the individual reflection.
 
 
 Yazan
