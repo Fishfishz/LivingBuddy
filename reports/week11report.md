@@ -39,9 +39,8 @@ Andy
 
 Chris
  - Goals from last week:
-   - 
+   - Complete the individual reflection.
  - What I have worked on this week
-   - 
- - Goals:
-   - 
+   - Completed the individual reflection.
+   - Completed the feedback for other groups.
 
